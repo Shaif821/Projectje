@@ -1,0 +1,278 @@
+body, html {
+    padding:0;
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+    height:100%;
+}
+
+header {
+    width: 100%;
+    margin:0;
+    padding:0;
+}
+
+.inheader {
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    -webkit-box-shadow: inset 0px -6px 20px -13px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px -6px 20px -13px rgba(0,0,0,0.75);
+    box-shadow: inset 0px -6px 20px -13px rgba(0,0,0,0.75);
+    letter-spacing: 1em;
+}
+
+#container {
+    display: flex;
+    max-width:1200px;
+    margin:0 auto;
+    -webkit-box-shadow: 13px 13px 15px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 13px 13px 15px -12px rgba(0,0,0,0.75);
+    box-shadow: 13px 13px 15px -12px rgba(0,0,0,0.75);
+    transition: ease-in-out 0.3s;
+    /*border: 1px solid red;*/
+}
+
+aside {
+    flex-shrink:0;
+    width: 300px;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+    border-right: 1px solid cadetblue;
+}
+
+.main {
+    flex-grow:1;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    align-content: center;
+    width: 100%;
+    max-height: 550px;
+}
+
+.inner-main {
+    margin-bottom:30%;
+    width: 100%;
+}
+
+.omtab {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+
+.tabje {
+    transition: ease-in-out 0.3s;
+    width:100%;
+    margin: 0 auto;
+    display: inline-flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    border-top:1px solid white;
+    border-bottom:1px solid white;
+    flex-direction:column;
+    flex:1;
+}
+
+
+.tabje:hover  {
+    transition: width 0.3s;
+    /*transition: ease-in-out 0.4s;*/
+    width:100%;
+    letter-spacing:0.5em;
+    cursor: pointer;
+}
+
+
+.tabje:first-child:hover {
+    color: TEAL;
+    transition: ease-in-out 0.2s;
+    border: 1px solid darkcyan;
+
+}
+
+.tabje:nth-child(3):hover {
+    color: green;
+    transition: ease-in-out 0.2s;
+    border: 1px solid darkgreen;
+}
+
+.tabje:nth-child(4):hover {
+    color: maroon;
+    transition: ease-in-out 0.2s;
+    border: 1px solid firebrick;
+}
+
+.editbut {
+    display: none;
+}
+
+.delbut {
+    display: none;
+}
+
+/*Deze classen worden toegevoegd door javascript:*/
+
+.added1 {
+    background: TEAL;
+    color: white;
+    border-left:1px solid teal;
+    border-top:1px solid teal;
+    border-bottom:1px solid teal;
+    /*transition: width 0.3s;*/
+    width:100%;
+    letter-spacing:0.5em;
+}
+
+.added2 {
+    background: darkgreen;
+    color: white;
+    border-left:1px solid darkgreen;
+    border-top:1px solid darkgreen;
+    border-bottom:1px solid darkgreen;
+    /*text-shadow: 4px 4px 4px rgba(150, 150, 150, 1);*/
+    /*transition: width 0.3s;*/
+    width:100%;
+    letter-spacing:0.5em;
+}
+
+.added3 {
+    background: maroon;
+    color: white;
+    border-left:1px solid firebrick;
+    border-top:1px solid firebrick;
+    border-bottom:1px solid firebrick;
+    /*text-shadow: 4px 4px 4px rgba(150, 150, 150, 1);*/
+    /*transition: width 0.3s;*/
+    width:100%;
+    letter-spacing:0.5em;
+}
+
+
+
+#deeltje1 {
+    color:teal;
+    transition: ease-in-out 0.4s;
+    border-bottom: 1px solid darkcyan;
+    border-left: 1px solid darkcyan;
+    width: 100%;
+    display: none;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn .5s ease-in 1 forwards;
+}
+
+.is-paused {
+    animation-play-state: paused;
+}
+
+
+
+.inputdeel {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    align-content: center;
+}
+/*Einde aside gedoe*/
+
+/*Main*/
+
+.info {
+    width:100%;
+    max-width: 850px;
+    height: auto;
+    flex-grow:1;
+}
+
+.main-titel {
+    display: flex;
+    flex-direction: column;
+    /*width: 100%;*/
+    justify-content:center;
+    align-items: center;
+    padding:0.5em;
+
+}
+
+.main-titel h2 {
+    letter-spacing: 0.5em;
+
+}
+
+.main-titel  hr {
+    border: 1px solid black;
+    width: 20%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 95%;
+    margin: 0 auto;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+img {
+    width: 20px;
+    display: inline-flex;
+    height:20px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    align-content: center;
+}
+
+
+
+/*Einde main*/
+
+footer {
+    background: white;
+    text-align: center;
+    font-size:20px;
+    color: TEAL;
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height:60px;
+    -webkit-box-shadow: inset 0px 7px 20px -13px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 7px 20px -13px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 7px 20px -13px rgba(0,0,0,0.75);
+
+}
+
+
+/*Media queries... heb niks te doen dus waarom niet*/
+@media all and (max-width: 800px){
+    #container {
+        flex-flow:column;
+    }
+
+    aside {
+        width:auto;
+    }
+}
